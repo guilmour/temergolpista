@@ -90,7 +90,7 @@ function handleText(textNode)
 {
 	var v = textNode.nodeValue;
 
-	v = v.replace(/\bMICHEL TEMER\b/g, "TEMER GOLPISTA GOLPISTA");
+	v = v.replace(/\bMICHEL TEMER\b/g, "TEMER GOLPISTA");
 	v = v.replace(/\bMichel Temer\b/g, "Temer Golpista");
 	v = v.replace(/\bPresidente Interino\b/g, "Presidente Sem Voto");
 	v = v.replace(/\bPresidente do Brasil desde 2016\b/g, "Presidente Golpista e Sem Voto do Brasil desde 2016");
@@ -107,7 +107,16 @@ function handleText(textNode)
 	v = v.replace(/\bvice-presidente Michel Temer\b/g, "Vice-decorativo e golpista");
 	v = v.replace(/\bpresidente interino da República Federativa do Brasil\b/g, "presidente golpista sem voto da República Federativa do Brasil");
 	v = v.replace(/\.( )*\bTemer\b/g, ". Temer Golpista");
-	v = v.replace(/\bcss.og.infg.com.br\b/gi, "temergolpista.greve.xyz");
+
+	v = v.replace(/\bMarcela Temer\b/g, "Bela, Recatada e do Lar");
+
+	v = v.replace(/\bEDUARDO CUNHA\b/g, "EDUARDO CUNHA GOLPISTA");
+	v = v.replace(/\bEduardo Cunha\b/g, "Eduardo Cunha Golpista");
+	v = v.replace(/\bEduardo Cosentino da Cunha\b/g, "Eduardo Cunha Golpista");
+	v = v.replace(/\beduardo cosentino da cunha\b/g, "eduardo cunha golpista");
+
+
+	v = v.replace(/\bMarcela Temer\b/g, "Bela, Recatada e do Lar");
 
 	var i = senadores.length;
 
