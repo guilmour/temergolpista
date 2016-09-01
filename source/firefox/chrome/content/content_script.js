@@ -1,4 +1,68 @@
 (function() {
+    var senadores = [
+        "Acir Gurgacz",
+        "Aloysio Nunes",
+        "Alvaro Dias",
+        "Ana Amélia",
+        "Antonio Anastasia",
+        "Antonio Carlos Valadares",
+        "Ataídes Oliveira",
+        "Aécio Neves",
+        "Benedito de Lira",
+        "Cidinho Santos",
+        "Ciro Nogueira",
+        "Cristovam Buarque",
+        "Cássio Cunha Lima",
+        "Dalirio Beber",
+        "Davi Alcolumbre",
+        "Dário Berger",
+        "Edison Lobão",
+        "Eduardo Amorim",
+        "Eduardo Braga",
+        "Eduardo Lopes",
+        "Eunício Oliveira",
+        "Fernando Bezerra Coelho",
+        "Fernando Collor de Mello",
+        "Flexa Ribeiro",
+        "Garibaldi Alves Filho",
+        "Gladson Cameli",
+        "Hélio José",
+        "Ivo Cassol",
+        "Jader Barbalho",
+        "José Agripino",
+        "José Aníbal",
+        "José Maranhão",
+        "José Medeiros",
+        "João Alberto Souza",
+        "Lasier Martins",
+        "Lúcia Vânia",
+        "Magno Malta",
+        "Maria do Carmo Alves",
+        "Marta Suplicy",
+        "Omar Aziz",
+        "Paulo Bauer",
+        "Pedro Chaves",
+        "Raimundo Lira",
+        "Reguffe",
+        "Renan Calheiros",
+        "Ricardo Ferraço",
+        "Roberto Rocha",
+        "Romero Jucá",
+        "Romário",
+        "Ronaldo Caiado",
+        "Rose de Freitas",
+        "Simone Tebet",
+        "Sérgio Petecão",
+        "Tasso Jereissati",
+        "Telmário Mota",
+        "Valdir Raupp",
+        "Vicentinho Alves",
+        "Waldemir Moka",
+        "Wellington Fagundes",
+        "Wilder Morais",
+        "Zeze Perrella"
+    ];
+
     function walk(node)
     {
         var child, next;
@@ -41,6 +105,13 @@
       	v = v.replace(/\bVice-Presidente Michel Temer\b/g, "Vice-decorativo e golpista");
       	v = v.replace(/\bvice-presidente Michel Temer\b/g, "Vice-decorativo e golpista");
       	v = v.replace(/\bvice-presidente Michel Temer\b/g, "Vice-decorativo e golpista");
+
+        var i = senadores.length;
+
+        while (i--) {
+            if (v.indexOf("GOLPISTA") == -1)
+                v = v.replace(new RegExp('\\b' + senadores[i] + '\\b', 'gi'), senadores[i] + ' (GOLPISTA)');
+        }
 
         textNode.nodeValue = v;
     }
