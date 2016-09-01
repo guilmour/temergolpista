@@ -113,7 +113,7 @@ function handleText(textNode)
 
 	while (i--) {
         if (v.indexOf("GOLPISTA") == -1)
-            v = v.replace(new RegExp('\\b' + senadores[i] + '\\b', 'gi'), senadores[i] + ' (GOLPISTA)');
+            v = v.replace(new RegExp('\\b' + senadores[i] + '\\b', 'gi'), senadores[i] + ' (Golpista)');
     }
 
 	/*Images !!!! 1 k de shares*/
