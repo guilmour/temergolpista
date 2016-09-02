@@ -110,10 +110,10 @@ function handleText(textNode)
 
 	v = v.replace(/\bMarcela Temer\b/g, "Bela, Recatada e do Lar");
 
-	v = v.replace(/\bEDUARDO CUNHA\b/g, "EDUARDO CUNHA GOLPISTA");
-	v = v.replace(/\bEduardo Cunha\b/g, "Eduardo Cunha Golpista");
-	v = v.replace(/\bEduardo Cosentino da Cunha\b/g, "Eduardo Cunha Golpista");
-	v = v.replace(/\beduardo cosentino da cunha\b/g, "eduardo cunha golpista");
+	v = v.replace(/\bEDUARDO CUNHA\b/g, "CUNHA GOLPISTA");
+	v = v.replace(/\bEduardo Cunha\b/g, "Cunha Golpista");
+	v = v.replace(/\bEduardo Cosentino da Cunha\b/g, "Cunha Golpista");
+	v = v.replace(/\beduardo cosentino da cunha\b/g, "cunha golpista");
 
 
 	v = v.replace(/\bMarcela Temer\b/g, "Bela, Recatada e do Lar");
