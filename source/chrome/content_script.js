@@ -92,6 +92,7 @@ function handleText(textNode)
 
 	v = v.replace(/\bMICHEL TEMER\b/g, "TEMER GOLPISTA");
 	v = v.replace(/\bMichel Temer\b/g, "Temer Golpista");
+	v = v.replace(/\bmichel temer\b/g, "temer golpista");
 	v = v.replace(/\bPresidente Interino\b/g, "Presidente Sem Voto");
 	v = v.replace(/\bPresidente do Brasil desde 2016\b/g, "Presidente Golpista e Sem Voto do Brasil desde 2016");
 	v = v.replace(/\bpresidente interino Michel Temer\b/g, "presidente sem voto");
@@ -107,6 +108,7 @@ function handleText(textNode)
 	v = v.replace(/\bvice-presidente Michel Temer\b/g, "Vice-decorativo e golpista");
 	v = v.replace(/\bpresidente interino da República Federativa do Brasil\b/g, "presidente golpista sem voto da República Federativa do Brasil");
 	v = v.replace(/\.( )*\bTemer\b/g, ". Temer Golpista");
+		v = v.replace(/\b37º Presidente do Brasil\b/g, "Presidente Golpista e Sem Voto do Brasil");
 
 	v = v.replace(/\bMarcela Temer\b/g, "Bela, Recatada e do Lar");
 
