@@ -1,7 +1,7 @@
 {
 	"manifest_version": 2,
 	"name": "Temer Golpista",
-	"version": "1.3.6",
+	"version": "1.4.0",
 	"description": "Deixe seu navegador dizer a verdade com esse plugin que troca 'Michel Temer' por 'Temer Golpista'.",
 	"content_scripts":
 	[
