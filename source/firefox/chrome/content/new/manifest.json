@@ -2,7 +2,7 @@
 
   "manifest_version": 2,
   "name": "Temer Golpista",
-  "version": "1.0",
+  "version": "1.1",
 
   "description": "Uma extensão para navegadores que muda o nome de Michel Temer para “Temer Golpista” ",
 
@@ -15,6 +15,7 @@
     {
 	"matches": ["*://*/*"],
 	"js": ["content_script.js"],
+  "exclude_matches": ["http://temergolpista.greve.xyz/"],
 	"run_at": "document_end"
     }
   ]
